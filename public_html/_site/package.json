@@ -1,0 +1,22 @@
+{
+  "name": "Suntalee",
+  "version": "0.1.0",
+  "author": {
+    "name": "jeff",
+    "email": "jeff@gordon24.com",
+    "url": "https://github.com/Jefers/suntalee"
+  },
+  "description": "Tutorial files - The Basics of Grunt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//Jefers/suntalee"
+  },
+  "dependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-uglify": "~0.1.2",
+    "grunt-contrib-watch": "~0.3.1"
+  },
+  "engines": {
+    "node": "0.8.x"
+  }
+}
