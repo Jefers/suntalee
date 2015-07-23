@@ -11,11 +11,11 @@
 
     if ($_POST['submit'] && $human == '4') {
         if (mail ($to, $subject, $body, $from)) {
-      echo '<p>Your message has been sent!</p>';
+      echo '<h1>Your message has been sent!</h1>';
   } else {
-      echo '<p>Something went wrong, go back and try again!</p>';
+      echo '<h1>Something went wrong, go back and try again!</h1>';
   }
     } else if ($_POST['submit'] && $human != '4') {
-  echo '<p>You answered the anti-spam question incorrectly!</p>';
+  echo '<h1>You answered the anti-spam question incorrectly!</h1>';
     }
 ?>
