@@ -51,13 +51,19 @@
 
 	p
 			{
-				line-height: 2em;
-				font-size: 2em;
+				line-height: 1.5em;
+				font-size: 1.5em;
+			}
+
+	p.dark_text
+			{
+				color: #000;
+				font-size: 1.25em;
 			}
 
 	h1
 			{
-				font-size: 3em;
+				font-size: 2.5em;
 			}
 
   h2
@@ -117,7 +123,7 @@
 
 		.dark a
 		{
-			font-size: 2.0em;
+			font-size: 1.5em;
 			color: #fff;
 			border-bottom-color: rgba(255,255,255,0.5);
 		}
@@ -320,13 +326,14 @@
 			/*list-style: square url('images/tickbox.png');*/
 			list-style-position: inside;
 			line-height: 2em;
-			font-size: 1.75em;
-			padding-left: 1em;
+			font-size: 1.25em;
+			color: #000;
+			/*padding-left: 1em;*/
 		}
 
 			ul.slee li
 			{
-				padding-left: 0.5em;
+				/*padding-left: 0.5em;*/
 			}
 
 		ul.icons
@@ -669,7 +676,7 @@
 			cursor: pointer;
 			border: 0;
 			color: #fff;
-			font-size: 1.5em;
+			font-size: 1.25em;
 			text-align: center;
 			text-decoration: none;
 			-moz-transition: all 0.25s ease-in-out;
@@ -678,6 +685,19 @@
 			-ms-transition: all 0.25s ease-in-out;
 			transition: all 0.25s ease-in-out;
 		}
+
+/*		a.button.scrolly
+		{
+			-webkit-appearance: none;
+			position: relative;
+			display: inline-block;
+			background: #3d3d3d;
+			color: #fff;
+			font-size: 2.5em;
+			text-align: center;
+			text-decoration: none;
+		}*/
+
 
 			input[type="button"]:hover,
 			input[type="submit"]:hover,
@@ -874,7 +894,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 
 			#header header h1
 			{
-				font-size: 4.5em;
+				font-size: 1.5em;
 				line-height: 1.25em;
 				margin-bottom: 0;
 			}
@@ -914,7 +934,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 
 			.main > header h1
 			{
-				font-size: 4.5em;
+				font-size: 3.5em;
+				font-weight: 100;
+				margin-bottom: 0;
+			}
+
+			.main > header h1.title
+			{
+				font-size: 1.5em;
 				font-weight: 100;
 				margin-bottom: 0;
 			}
