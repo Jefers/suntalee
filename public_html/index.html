@@ -10,11 +10,6 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Budget Phuket Hotel Accommodation" />
 		<meta name="keywords" content="Phuket, Thailand, hotel, accommdation, budget, rooms, bungalows, airport, beach, package, holiday, vacation," />
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-    <meta http-equiv="pragma" content="no-cache" />
     <meta name="robots" content="noimageindex">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -33,12 +28,69 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
 
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-wide.css" />
+    <link rel="stylesheet" href="css/responsive-menu.css" />
 
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <style>
+
+    @font-face {
+      font-family: 'fontello';
+      src: url('fonts/fontello.eot');
+      src: url('fonts/fontello.eot') format('embedded-opentype'),
+           url('fonts/fontello.woff') format('woff'),
+           url('fonts/fontello.ttf') format('truetype'),
+           url('fonts/fontello.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+
+    .glyph-icon
+    {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      color: white;
+      speak: none;
+
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+
+      /* fix buttons height, for twitter bootstrap */
+      /*line-height: 1em;*/
+
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      /*margin-left: .2em;*/
+
+      /* You can be more comfortable with increased icons size */
+       font-size: 120%;
+
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      /* Uncomment for 3D effect */
+       text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+    }
+
+    i.glyph-icon{ background-color: black; }
+
+    }
+     </style>
+
 <style>
 
     html
@@ -443,12 +495,178 @@
     }
 
   </style>
+    <style>
+            div.navcontainer
+            {
+                top:0;
+                height: 2em;
+            }
+
+@media screen and (max-width: 1200px) {
+              div.navcontainer{
+                height: 16em;
+            }
+}
+            .navheader
+            {
+                width: 100%;
+                /*height: 16em;*/
+                text-align: center;
+                background-color: rgba(255,255,255,.1);
+                position: fixed;
+                z-index: 1;
+                top:  0;
+                left: 0;
+
+                -webkit-box-shadow: 0 0.063em 0.25em rgba( 37, 50, 55, .25 );
+                box-shadow: 0 0.063em 0.25em rgba( 37, 50, 55, .25 );
+
+
+                -webkit-transition-duration: .5s;
+                transition-duration: .5s;
+
+                -webkit-transition-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 );
+                transition-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 );
+
+
+                -webkit-transition-property: -webkit-transform, height, padding-top, padding-left;
+                transition-property: transform, height, padding-top, padding-left;
+
+
+            }
+
+
+            .navheader--narrow
+            {
+                height: 4em;
+            }
+
+            .navheader--hidden
+            {
+                -webkit-transform: translateY( -100% );
+                -ms-transform:     translateY( -100% );
+                transform:         translateY( -100% );
+            }
+
+/*
+            .mainNav--hidden
+            {
+                -webkit-transform: translateY( -100% );
+                -ms-transform: translateY( -100% );
+                transform: translateY( -100% );
+            }*/
+
+
+
+    </style>
 	</head>
 	<body>
+<header class="navheader" role="banner">
+    <div class="navcontainer">
+
+        <nav id="mainNav">
+          <div id="logo"><img src="SuntaleeLogoBadgeSmall.svg" alt="Logo" width="100%" height="100%" /></div>
+            <ul id="mainMenu">
+                <li>Menu</li>
+                <li><a href="#f"      class="scrolly">Facilities</a></li>
+                <li><a href="#r"      class="scrolly">Rooms and Rates</a></li>
+                <li><a href="#g"      class="scrolly">Gallery Pictures</a></li>
+                <li><a href="#m"      class="scrolly">Map</a></li>
+                <li><a href="#c"      class="scrolly">Contact Address</a></li>
+                <li><a href="#header" class="scrolly">Go to Top</a></li>
+                <li><a href="#e"      class="scrolly" id="mobileToggle"><i class="glyph-icon">&#xe800;</i></b></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<script>
+      /*
+        By Osvaldas Valutis, www.osvaldas.info
+        Available for use under the MIT License
+    */
+
+
+    ;( function ( document, window, index )
+    {
+        'use strict';
+
+        var elSelector      = '.navheader',
+            elClassHidden   = 'navheader--hidden',
+            // elClassHidden2  = 'mainNav--hidden',
+            elClassNarrow   = 'navheader--narrow',
+            elNarrowOffset  = 50,
+            throttleTimeout = 500,
+            element         = document.querySelector( elSelector );
+
+        if( !element ) return true;
+
+        var dHeight         = 0,
+            wHeight         = 0,
+            wScrollCurrent  = 0,
+            wScrollBefore   = 0,
+            wScrollDiff     = 0,
+
+            hasElementClass     = function( element, className ){ return element.classList ? element.classList.contains( className ) : new RegExp( '(^| )' + className + '( |$)', 'gi' ).test( element.className ); },
+            addElementClass     = function( element, className ){ element.classList ? element.classList.add( className ) : element.className += ' ' + className; },
+            removeElementClass  = function( element, className ){ element.classList ? element.classList.remove( className ) : element.className = element.className.replace( new RegExp( '(^|\\b)' + className.split( ' ' ).join( '|' ) + '(\\b|$)', 'gi' ), ' ' ); },
+
+            throttle = function( delay, fn )
+            {
+                var last, deferTimer;
+                return function()
+                {
+                    var context = this, args = arguments, now = +new Date;
+                    if( last && now < last + delay )
+                    {
+                        clearTimeout( deferTimer );
+                        deferTimer = setTimeout( function(){ last = now; fn.apply( context, args ); }, delay );
+                    }
+                    else
+                    {
+                        last = now;
+                        fn.apply( context, args );
+                    }
+                };
+            };
+
+        window.addEventListener( 'scroll', throttle( throttleTimeout, function()
+        {
+            dHeight         = document.body.offsetHeight;
+            wHeight         = window.innerHeight;
+            wScrollCurrent  = window.pageYOffset;
+            wScrollDiff     = wScrollBefore - wScrollCurrent;
+
+            if( wScrollCurrent > elNarrowOffset ) // toggles "narrow" classname
+            {
+                if( !hasElementClass( element, elClassNarrow ) )
+                    addElementClass( element, elClassNarrow );
+            }
+            else removeElementClass( element, elClassNarrow );
+
+            if( wScrollCurrent <= 0 ) // scrolled to the very top; element sticks to the top
+                removeElementClass( element, elClassHidden );
+
+            else if( wScrollDiff > 0 && hasElementClass( element, elClassHidden ) ) // scrolled up; element slides in
+                removeElementClass( element, elClassHidden );
+
+            else if( wScrollDiff < 0 ) // scrolled down
+            {
+                if( wScrollCurrent + wHeight >= dHeight && hasElementClass( element, elClassHidden ) ) // scrolled to the very bottom; element slides in
+                    removeElementClass( element, elClassHidden );
+
+                else // scrolled down; element slides out
+                    addElementClass( element, elClassHidden );
+            }
+
+            wScrollBefore = wScrollCurrent;
+        }));
+
+    }( document, window, 0 ));
+</script>
 
 		<!-- Header -->
 			<section id="header" class="dark style7">
-				<header>
+				<header id="t">
 					<h1 class="title">Suntalee House and bungalows</h1>
 					<h1 class="title">Phuket Thailand</h1>
 					<p>Bargain accommodation in Phuket</p>
@@ -465,11 +683,11 @@
 						<h1>Facilities</h1>
 						<h2>Suntalee House is close to Nai Yang Beach Phuket and convenient for Phuket airport</h2>
 				</header>
-				<div class="content dark style1 featured">
+				<div id="f" class="content dark style1 featured">
 					<div class="container">
 						<div class="row">
 							<div class="12u">
-										<p class="dark_text">We have twelve self contained one bedroom bungalows<br />
+										<p class="dark_text">We have a variety of self contained one bedroom bungalows<br />
 									  for rent by the night, week or month<br />
 									  Flexibility to suit your needs.<br />
 										Bungalows have a large double bed, twin beds or triple (double and single)</p>
@@ -513,7 +731,7 @@
 									<h1>Rooms and rates</h1>
 								</div>
 							</header>
-				<div class="content dark style2 featured">
+				<div id="r" class="content dark style2 featured">
 					<div class="container">
 						<div class="row">
 							<div class="12u">
@@ -595,7 +813,7 @@
 						See more in our gallery section or email us with your requirements.</p>
 					</div>
 				</header>
-				<div class="content dark style3 featured">
+				<div id="g" class="content dark style3 featured">
 					<div class="container">
 						<div class="row">
 									<div class="12u">
@@ -635,12 +853,12 @@
 						<h1>Map</h1>
 					</div>
 				</header>
-				<div class="content dark style4 featured">
+				<div id="m" class="content dark style4 featured">
 					<div class="container">
 						<div class="row">
 							<div class="12u">
 
-                  <span class="image"><img src="images/suntaleemap.svg" alt="" /></span>
+                  <span class="image fit"><img src="images/SuntaleeMap.svg" alt="" /></span>
 
 								<footer>
 									<a href="#fifth" class="button scrolly">Location</a>
@@ -660,23 +878,24 @@
 
           </div>
         </header>
-        <div class="content dark style5 featured">
+        <div id="c" class="content dark style5 featured">
           <div class="container">
             <div class="row">
               <div class="12u">
-                <span class="image"><img src="images/signage-min.jpg" alt="" /></span>
 
-                <h2>Contact us</h2>
+                <h2 >Contact us</h2>
                 <p>Suntalee Address :<br /><br />
                     65/12 Moo5, Naiyang Beach, T.Sakoo<br />
                     A.Thalang, Phuket, Thailand 83110<br /><br />
-                    For English call 66 - (0)76 - 205131<br />
-                    For Thai call : 66 - (0)83 - 5910279<br /><br />
+                    For English call +66 - (0)95 - 0854159<br />
+                    For English call +66 - (0)76 - 205131<br />
+                    For Thai call :  +66 - (0)83 - 5910279<br /><br />
                     E-mail : holiday@suntalee.com</p><br />
                  <p>ซัญตาลี เฮ้าส์<br />
                     65/12 หมู่ที่ 5 <br />
                     ต.สาคู อ.ถลาง <br />
                     จ.ภูเก็ต</p>
+                  <span class="image"><img src="images/signage-min.jpg" alt="" /></span>
                 <footer>
                   <a href="#sixth" class="button scrolly">Contact form</a>
                   <a href="#header" class="button scrolly">back to top</a>
@@ -964,5 +1183,6 @@
 
 </script>
 
+   <script src="js/responsive-menu.js"></script>
 	</body>
 </html>

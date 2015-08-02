@@ -121,6 +121,11 @@
 			border-bottom-color: rgba(0,0,0,0);
 		}
 
+		a, a:visited, a:hover, a:active {
+		    text-decoration: none;
+		    color: inherit;
+		}
+
 		.dark a
 		{
 			font-size: 1.5em;
@@ -266,7 +271,7 @@
 				top: 0;
 				width: 100%;
 				height: 100%;
-				background: url('images/overlayno.png');
+				/*background: url('images/overlayno.png');*/
 			}
 
 			.image img
@@ -890,6 +895,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 
 		#header header
 		{
+				margin-top:	 5em;
 		}
 
 			#header header h1
@@ -1081,3 +1087,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 				{
 					box-shadow: inset 0 0 0 1px #d6d6d6;
 				}
+
+/*		  #mobileToggle {
+		    display: block;
+		  }
+
+			#mobileToggle {
+			  width: 30px;
+			  position: absolute;
+			  right: 40px;
+			  top: 25px;
+			  cursor: pointer;
+			}
+			#mobileToggle .bar {
+			  height: 2px;
+			  width: 100%;
+			  margin: 0px 0px 6px 0px;
+			  padding: 6px 0px;
+			  background: white;
+			}*/
+
+		.tooltip-arrow,
+		.red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}

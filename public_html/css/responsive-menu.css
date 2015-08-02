@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+#mainNav {
+  height: 50px;
+  width: 100%;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0px 40px;
+  overflow: hidden;
+  transition: height 0.7s;
+  transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+}
+
+div#logo {
+  position: fixed;
+  width: 50px;
+  top: 0;
+  left: 0;
+}
+
+/*#mainNav #logo {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+}*/
+
+#mainNav #logo a {
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+#mainNav #logo a span {
+  color: #fa3636;
+}
+
+#mainNav #mobileToggle {
+  width: 30px;
+  position: absolute;
+  right: 40px;
+  top: 5px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+
+  #mainNav #mobileToggle {
+    height: 50px;
+    display: block;
+  }
+}
+
+#mainNav #mobileToggle .bar {
+  height: 2px;
+  width: 100%;
+  margin: 6px 0px;
+  background: black;
+}
+
+#mainNav #mainMenu {
+  float: right;
+  list-style-type: none;
+}
+@media screen and (max-width: 1200px) {
+
+  #mainNav #mainMenu {
+    float: none;
+    clear: both;
+    /*border-top: 1px solid white;*/
+    padding: 10px;
+  }
+}
+
+#mainNav #mainMenu li {
+  line-height: 40px;
+  margin: 0px 20px;
+  display: inline-block;
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+
+  #mainNav #mainMenu li {
+    display: block;
+    line-height: 40px;
+    margin: 0px;
+  }
+}
+
+#mainNav #mainMenu li:last-child {
+  margin-right: 0px;
+}
+
+#mainNav #mainMenu li a {
+  font-size: 1.25em;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+#mainNav #mainMenu li a:hover {
+  color: white;
+  background-color: #fa3636;
+}
+
+
