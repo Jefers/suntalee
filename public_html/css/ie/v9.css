@@ -16,7 +16,7 @@
 		{
 		}
 
-		.main > .content.style1
+		.main > .content.style-orange
 		{
 			background:	url('../images/bgtr.svg') top right no-repeat,
 						url('../images/bgbl.svg') bottom left no-repeat,
@@ -25,7 +25,7 @@
 						url('images/content-style1.svg');
 		}
 
-		.main > .content.style2
+		.main > .content.style-blue
 		{
 			background:	url('../images/bgtr.svg') top right no-repeat,
 						url('../images/bgbl.svg') bottom left no-repeat,
@@ -34,7 +34,7 @@
 						url('images/content-style2.svg');
 		}
 
-		.main > .content.style3
+		.main > .content.style-green
 		{
 			background:	url('../images/bgtr.svg') top right no-repeat,
 						url('../images/bgbl.svg') bottom left no-repeat,

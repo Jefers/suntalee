@@ -10,7 +10,7 @@
 
 	.image,
 	.image img,
-	.button	
+	.button
 	{
 		position: relative;
 		-ms-behavior: url('css/ie/PIE.htc');
@@ -22,7 +22,7 @@
 		article
 		{
 		}
-		
+
 			section > .last-child,
 			article > .last-child
 			{
@@ -39,12 +39,12 @@
 
 		ul.icons
 		{
-		}	
-		
+		}
+
 			ul.icons li
 			{
 			}
-			
+
 				ul.icons a
 				{
 					position: relative;
@@ -57,7 +57,7 @@
 		form
 		{
 		}
-		
+
 			form input.text,
 			form select,
 			form .select,
@@ -73,12 +73,12 @@
 			{
 				position: relative;
 			}
-			
+
 				form select option
 				{
 					color: #000;
 				}
-				
+
 			form .select
 			{
 			}
@@ -92,9 +92,9 @@
 				{
 					display: none;
 				}
-				
+
 	/* Button */
-		
+
 		.button.alt
 		{
 			border: solid 1px #ddd;
@@ -106,7 +106,7 @@
 		{
 			padding-bottom: 0;
 		}
-		
+
 			.feature-icon:before,
 			.feature-icon:after
 			{
@@ -125,7 +125,7 @@
 					font-size: 6em;
 					color: #3d3d3d;
 				}
-	
+
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
@@ -151,17 +151,17 @@
 		{
 		}
 
-		.main > .content.style1
+		.main > .content.style-orange
 		{
 			filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#412e4c, endColorstr=#a56365);
 		}
 
-		.main > .content.style2
+		.main > .content.style-blue
 		{
 			filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#85505f, endColorstr=#384955);
 		}
 
-		.main > .content.style3
+		.main > .content.style-green
 		{
 			filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#2f394e, endColorstr=#5f796b);
 		}

@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-// Makes this work for specific bar icon but I want to close the menu auto on selection
+//  Makes this work for specific bar icon but I want to close the menu auto on selection
 // $('#mobileToggle').click(function() {
 //   var nav = $('#mainNav');
 //   var newHeight = $('#mainMenu').height() + 10;
@@ -18,7 +18,7 @@ $(document).ready(function () {
 $('#mainNav ul li').click(function() {
   var nav = $('#mainNav');
   var newHeight = $('#mainMenu').height() + 10;
-  var normalHeight = 50;
+  var normalHeight = 60;
 
   nav.toggleClass('mobileNavOpen');
 

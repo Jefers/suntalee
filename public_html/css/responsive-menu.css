@@ -1,8 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
 #mainNav {
-  height: 50px;
   width: 100%;
   background: black;
   position: fixed;
@@ -21,12 +17,6 @@ div#logo {
   left: 0;
 }
 
-/*#mainNav #logo {
-  position: fixed;
-  top: 0;
-  left: 0;
-}*/
-
 #mainNav #logo a {
   color: white;
   font-weight: bold;
@@ -35,7 +25,7 @@ div#logo {
 }
 
 #mainNav #logo a span {
-  color: #fa3636;
+  color: rgba(255,255,255,.7);
 }
 
 #mainNav #mobileToggle {
@@ -46,6 +36,17 @@ div#logo {
   cursor: pointer;
   display: none;
 }
+
+#mobileToggle a {
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+#mobileToggle a:hover {
+   color: green;
+   background-color: blue;
+}
+
 @media screen and (max-width: 1200px) {
 
   #mainNav #mobileToggle {
@@ -85,7 +86,6 @@ div#logo {
 
   #mainNav #mainMenu li {
     display: block;
-    line-height: 40px;
     margin: 0px;
   }
 }
@@ -97,12 +97,28 @@ div#logo {
 #mainNav #mainMenu li a {
   font-size: 1.25em;
   text-decoration: none;
+  transition-delay: 0.1s;
   transition: color 0.4s;
 }
 
 #mainNav #mainMenu li a:hover {
   color: white;
   background-color: #fa3636;
+  border-radius: 20%;
+
 }
 
+#mainNav #mainMenu li a {
+  font-size: 1.25em;
+  font-weight: 300;
+  letter-spacing: 0.10em;
+  text-decoration: none;
+  transition-delay: 0.1s;
+  transition: color 0.5s;
+}
+
+#mainNav #mainMenu li a:hover {
+  color: white;
+  background-color: rgba(255,255,255, 0.2);
+}
 

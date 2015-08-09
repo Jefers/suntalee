@@ -2,12 +2,6 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic");
 
-/*
-	Tessellate by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -108,7 +102,7 @@
 	{
 		color: inherit;
 		text-decoration: none;
-		border-bottom: dotted 1px rgba(0,0,0,0.25);
+/*		border-bottom: dotted 1px rgba(0,0,0,0.25);*/
 		-moz-transition: border-bottom-color 0.25s ease-in-out;
 		-webkit-transition: border-bottom-color 0.25s ease-in-out;
 		-o-transition: border-bottom-color 0.25s ease-in-out;
@@ -128,14 +122,18 @@
 
 		.dark a
 		{
-			font-size: 1.5em;
-			color: #fff;
-			border-bottom-color: rgba(255,255,255,0.5);
+			font-size: 1.25em;
+			color: rgba(49, 41, 58, 0.6);
+			text-decoration: none;
+      -webkit-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out;
 		}
 
 			.dark a:hover
 			{
-				border-bottom-color: rgba(255,255,255,0);
+				/*border-bottom-color: rgba(0,0,0,0.5);*/
+				color: rgba(255, 255, 255, 0.6);
 			}
 
 	sub
@@ -331,8 +329,9 @@
 			/*list-style: square url('images/tickbox.png');*/
 			list-style-position: inside;
 			line-height: 2em;
-			font-size: 1.25em;
-			color: #000;
+			font-size: 1.5em;
+			font-weight: 900;
+			color: rgba(0, 0, 0, 0.4);
 			/*padding-left: 1em;*/
 		}
 
@@ -985,7 +984,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 				background: #433;
 			}
 
-			.main > .content.style1
+			.main > .content.style-orange
+			/*orange*/
 			{
 				background:	url('images/bgtr.svg') top right no-repeat,
 							url('images/bgbl.svg') bottom left no-repeat,
@@ -995,7 +995,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 
 			}
 
-			.main > .content.style2
+			.main > .content.style-blue
+			/*blue*/
 			{
 				background:	url('images/bgtr.svg') top right no-repeat,
 							url('images/bgbl.svg') bottom left no-repeat,
@@ -1003,7 +1004,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 							linear-gradient(45deg, #0000ff 1%,#1e90ff 100%);
 			}
 
-			.main > .content.style3
+			.main > .content.style-green
+			/*green*/
 			{
 				background:	url('images/bgtr.svg') top right no-repeat,
 							url('images/bgbl.svg') bottom left no-repeat,
@@ -1011,7 +1013,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 							linear-gradient(45deg,#689200 0%,#84BA00 50%,#ABF000 100%);
 			}
 
-			.main > .content.style4
+			.main > .content.style-fusia-teal
+				/*fusia teal*/
 			{
 				background:	url('images/bgtr.svg') top right no-repeat,
 							url('images/bgbl.svg') bottom left no-repeat,
@@ -1019,7 +1022,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 							linear-gradient(45deg,#E900FF 0%,#008080 100%);
 			}
 
-			.main > .content.style5
+			.main > .content.style-purple
+			/*mauve*/
 			{
 				background:	url('images/bgtr.svg') top right no-repeat,
 							url('images/bgbl.svg') bottom left no-repeat,
@@ -1027,7 +1031,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 							linear-gradient(45deg,#78004e 0%,#980063 50%,#C50080 100%);
 			}
 
-			.main > .content.style6
+			.main > .content.style-fusia
+			/*fusia*/
 			{
 				background:	url('images/bgtr.svg') top right no-repeat,
 							url('images/bgbl.svg') bottom left no-repeat,
@@ -1037,7 +1042,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 
 			.main > .content.style7
 			{
-				background: #ff0101; /* Old browsers */
+				background: #ff0101; /* RED Old browsers */
 				background: -moz-linear-gradient(top,  #ff0101 0%, #ffd001 72%, #01aaff 87%, #01aaff 87%, #3cff01 100%); /* FF3.6+ */
 				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff0101), color-stop(72%,#ffd001), color-stop(87%,#01aaff), color-stop(87%,#01aaff), color-stop(100%,#3cff01)); /* Chrome,Safari4+ */
 				background: -webkit-linear-gradient(top,  #ff0101 0%,#ffd001 72%,#01aaff 87%,#01aaff 87%,#3cff01 100%); /* Chrome10+,Safari5.1+ */
@@ -1048,6 +1053,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 			}
 
 
+			.main > .content.style-brown
+			{
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfcfc+0,443333+1,4c3d3d+50,423c3c+51,443333+99,848484+100 */
+				background: #fcfcfc; /* Brown Old browsers */
+				background: -moz-linear-gradient(45deg,  #fcfcfc 0%, #443333 1%, #4c3d3d 50%, #423c3c 51%, #443333 99%, #848484 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#fcfcfc), color-stop(1%,#443333), color-stop(50%,#4c3d3d), color-stop(51%,#423c3c), color-stop(99%,#443333), color-stop(100%,#848484)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(45deg,  #fcfcfc 0%,#443333 1%,#4c3d3d 50%,#423c3c 51%,#443333 99%,#848484 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(45deg,  #fcfcfc 0%,#443333 1%,#4c3d3d 50%,#423c3c 51%,#443333 99%,#848484 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(45deg,  #fcfcfc 0%,#443333 1%,#4c3d3d 50%,#423c3c 51%,#443333 99%,#848484 100%); /* IE10+ */
+				background: linear-gradient(45deg,  #fcfcfc 0%,#443333 1%,#4c3d3d 50%,#423c3c 51%,#443333 99%,#848484 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#848484',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 
 
 /*********************************************************************************/
