@@ -33,6 +33,9 @@
 		line-height: 2.5em;
 		color: #888;
 		-webkit-text-stroke: 0.1px;
+		p.red::selection {
+    background: #ffb7b7;
+}
 	}
 
 	h1,h2,h3,h4,h5,h6
@@ -102,7 +105,6 @@
 	{
 		color: inherit;
 		text-decoration: none;
-/*		border-bottom: dotted 1px rgba(0,0,0,0.25);*/
 		-moz-transition: border-bottom-color 0.25s ease-in-out;
 		-webkit-transition: border-bottom-color 0.25s ease-in-out;
 		-o-transition: border-bottom-color 0.25s ease-in-out;
@@ -269,7 +271,6 @@
 				top: 0;
 				width: 100%;
 				height: 100%;
-				/*background: url('images/overlayno.png');*/
 			}
 
 			.image img
@@ -326,13 +327,12 @@
 
 		ul.slee
 		{
-			/*list-style: square url('images/tickbox.png');*/
 			list-style-position: inside;
 			line-height: 2em;
 			font-size: 1.5em;
 			font-weight: 900;
 			color: rgba(0, 0, 0, 0.4);
-			/*padding-left: 1em;*/
+
 		}
 
 			ul.slee li
@@ -1105,24 +1105,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 					box-shadow: inset 0 0 0 1px #d6d6d6;
 				}
 
-/*		  #mobileToggle {
-		    display: block;
-		  }
+/* Extras */
 
-			#mobileToggle {
-			  width: 30px;
-			  position: absolute;
-			  right: 40px;
-			  top: 25px;
-			  cursor: pointer;
-			}
-			#mobileToggle .bar {
-			  height: 2px;
-			  width: 100%;
-			  margin: 0px 0px 6px 0px;
-			  padding: 6px 0px;
-			  background: white;
-			}*/
+/* highlighter selections */
+::-moz-selection { /* Code for Firefox */
+    color: rgba(0,0,0,0.4);
+    background: rgba(128, 250, 34, 0.8);
+}
 
-		.tooltip-arrow,
-		.red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
+::selection {
+    color: rgba(0,0,0,0.4);
+    background: rgba(128, 250, 34, 0.8);
+}
+
+/* Experimental */
+
+  /* Tooltip */
+  .test + .tooltip > .tooltip-inner {
+      background-color: #8AC007;
+      color: #FFFFFF;
+      border: 1px solid green;
+      padding: 15px;
+      font-size: 20px;
+  }
+  /* Tooltip on top */
+  .test + .tooltip.top > .tooltip-arrow {
+      border-top: 5px solid green;
+  }
+  /* Tooltip on bottom */
+  .test + .tooltip.bottom > .tooltip-arrow {
+      border-bottom: 5px solid blue;
+  }
+  /* Tooltip on left */
+  .test + .tooltip.left > .tooltip-arrow {
+      border-left: 5px solid red;
+  }
+  /* Tooltip on right */
+  .test + .tooltip.right > .tooltip-arrow {
+      border-right: 5px solid black;
+  }
+
+  /* add this   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>*/
+/*  <ul class="list-inline">
+    <li><a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
+    <li><a class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></li>
+    <li><a class="test" href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
+    <li><a class="test" href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></li>
+  </ul>*/
