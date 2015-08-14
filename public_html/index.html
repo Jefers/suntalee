@@ -31,7 +31,7 @@
     <nav id="mainNav">
       <div id="logo"><img src="SuntaleeLogoBadgeSmall.svg" alt="Logo" width="50px" height="50px" /></div>
         <ul id="mainMenu">
-            <li>Menu</li>
+            <li class="menu">MENU</li>
             <li><a href="#f"      class="scrolly">Facilities</a></li>
             <li><a href="#r"      class="scrolly">Rooms and Rates</a></li>
             <li><a href="#g"      class="scrolly">Gallery Pictures</a></li>
@@ -372,7 +372,7 @@
 				</header>
 				<div class="content style6 featured">
 					<div class="container 75%">
-						<form method="post" action="contact.php">
+						<form method="post" action="contact.php" target="myIframe" >
 							<div class="row 50%">
 								<div class="6u"><input name="name" type="text" placeholder="Name" /></div>
 								<div class="6u"><input name="email" type="email"  placeholder="Email" /></div>
@@ -392,6 +392,7 @@
 								</div>
 							</div>
 						</form>
+            <iframe name="myIframe"></iframe>
 					</div>
 				</div>
 			</section>
@@ -418,96 +419,6 @@
       ga('create', 'UA-61002330-1', 'auto');
       ga('send', 'pageview');
     </script>
-
-<!--     // <script src="js/imagelightbox.js"></script>
-    // <script src="js/responsive-menu.js"></script>
-    // <script src="js/lightbox.js"></script>
-    // <script src="js/suntalee.js"></script> -->
-     <!-- // <script src= "js/build/suntalee.min.js"></script> -->
-
-     <script>
-      /*
-        By Osvaldas Valutis, www.osvaldas.info
-        Available for use under the MIT License
-    */
-
-
-    ;( function ( document, window, index )
-    {
-        'use strict';
-
-        var elSelector      = '.navheader',
-            elClassHidden   = 'navheader--hidden',
-            elClassNarrow   = 'navheader--narrow',
-            elNarrowOffset  = 50,
-            throttleTimeout = 500,
-            element         = document.querySelector( elSelector );
-
-        if( !element ) return true;
-
-        var dHeight         = 0,
-            wHeight         = 0,
-            wScrollCurrent  = 0,
-            wScrollBefore   = 0,
-            wScrollDiff     = 0,
-
-            hasElementClass     = function( element, className ){ return element.classList ? element.classList.contains( className ) : new RegExp( '(^| )' + className + '( |$)', 'gi' ).test( element.className ); },
-            addElementClass     = function( element, className ){ element.classList ? element.classList.add( className ) : element.className += ' ' + className; },
-            removeElementClass  = function( element, className ){ element.classList ? element.classList.remove( className ) : element.className = element.className.replace( new RegExp( '(^|\\b)' + className.split( ' ' ).join( '|' ) + '(\\b|$)', 'gi' ), ' ' ); },
-
-            throttle = function( delay, fn )
-            {
-                var last, deferTimer;
-                return function()
-                {
-                    var context = this, args = arguments, now = +new Date;
-                    if( last && now < last + delay )
-                    {
-                        clearTimeout( deferTimer );
-                        deferTimer = setTimeout( function(){ last = now; fn.apply( context, args ); }, delay );
-                    }
-                    else
-                    {
-                        last = now;
-                        fn.apply( context, args );
-                    }
-                };
-            };
-
-        window.addEventListener( 'scroll', throttle( throttleTimeout, function()
-        {
-            dHeight         = document.body.offsetHeight;
-            wHeight         = window.innerHeight;
-            wScrollCurrent  = window.pageYOffset;
-            wScrollDiff     = wScrollBefore - wScrollCurrent;
-
-            if( wScrollCurrent > elNarrowOffset ) // toggles "narrow" classname
-            {
-                if( !hasElementClass( element, elClassNarrow ) )
-                    addElementClass( element, elClassNarrow );
-            }
-            else removeElementClass( element, elClassNarrow );
-
-            if( wScrollCurrent <= 0 ) // scrolled to the very top; element sticks to the top
-                removeElementClass( element, elClassHidden );
-
-            else if( wScrollDiff > 0 && hasElementClass( element, elClassHidden ) ) // scrolled up; element slides in
-                removeElementClass( element, elClassHidden );
-
-            else if( wScrollDiff < 0 ) // scrolled down
-            {
-                if( wScrollCurrent + wHeight >= dHeight && hasElementClass( element, elClassHidden ) ) // scrolled to the very bottom; element slides in
-                    removeElementClass( element, elClassHidden );
-
-                else // scrolled down; element slides out
-                    addElementClass( element, elClassHidden );
-            }
-
-            wScrollBefore = wScrollCurrent;
-        }));
-
-    }( document, window, 0 ));
-</script>
 
 	</body>
 </html>

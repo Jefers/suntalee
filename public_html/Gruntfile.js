@@ -30,23 +30,23 @@ module.exports = function(grunt) {
         }
     },
 
-    // uglify: {
-    //   build: {
+    // cssmin: {
+    //   css:{
     //     src: 'css/suntalee.css',
     //     dest: 'css/suntalee.min.css'
     //   }
     // },
 
-//   imagemin: {
-//     dynamic: {
-//         files: [{
-//             expand: true,
-//             cwd: 'images/',
-//             src: ['**/*.{png,jpg,gif}'],
-//             dest: 'images/build/'
-//         }]
-//     }
-// },
+  imagemin: {
+    dynamic: {
+        files: [{
+            expand: true,
+            cwd: 'imagesrc/',
+            src: ['**/*.{png,jpg,gif}'],
+            dest: 'images'
+        }]
+    }
+},
 
 // watch: {
 //     options: {
@@ -55,11 +55,27 @@ module.exports = function(grunt) {
 
 //     scripts: {
 //         files: ['js/src/*.js'],
-//         tasks: ['concat', 'uglify'],
+//         tasks: ['uglify'],
 //         options: {
 //             spawn: false,
-//         },
-//     }
+//         }
+//     },
+
+//     concat: {
+//         css: {
+//           src: ['css/skel.css', 'css/style.css', 'css/style-wide.css', 'css/responsive-menu.css', 'css/responsive6.css', 'css/grad.css', 'css/imagelightbox.css', 'css/experimental.css'],
+//           dest: 'css/suntalee.css'
+//         }
+//     },
+
+//     cssmin: {
+//       css:{
+//         src: 'css/suntalee.css',
+//         dest: 'css/suntalee.min.css'
+//       }
+//     },
+
+
 // }
 
 
@@ -68,13 +84,14 @@ module.exports = function(grunt) {
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   // grunt.loadNpmTasks('grunt-contrib-sass');
-  // grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   // grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  // grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task(s).
   // grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass']);
-    grunt.registerTask('default', ['concat', 'uglify']);
+    grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
 
 
 
