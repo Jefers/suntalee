@@ -37,16 +37,16 @@ module.exports = function(grunt) {
     //   }
     // },
 
-  imagemin: {
-    dynamic: {
-        files: [{
-            expand: true,
-            cwd: 'imagesrc/',
-            src: ['**/*.{png,jpg,gif}'],
-            dest: 'images'
-        }]
-    }
-},
+//   imagemin: {
+//     dynamic: {
+//         files: [{
+//             expand: true,
+//             cwd: 'imagesrc/',
+//             src: ['**/*.{png,jpg,gif}'],
+//             dest: 'images'
+//         }]
+//     }
+// },
 
 // watch: {
 //     options: {
@@ -84,14 +84,14 @@ module.exports = function(grunt) {
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   // grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
-  // grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  // grunt.loadNpmTasks('grunt-contrib-cssmin');
+  // grunt.loadNpmTasks('grunt-contrib-imagemin');
+  // // grunt.loadNpmTasks('grunt-contrib-watch');
+  // grunt.loadNpmTasks('grunt-contrib-concat');
+  // // grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task(s).
   // grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass']);
-    grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
+    grunt.registerTask('default', ['uglify']);
 
 
 
