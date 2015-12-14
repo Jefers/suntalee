@@ -1,0 +1,51 @@
+.super-size h1 {
+    text-overflow: clip;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 50pt;
+    line-height: .0025em;
+    color: #fff;
+}
+
+.super-size h2 {
+    margin-left: 5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 30pt;
+    /*font-stretch: ultra-expanded; not supported yet*/
+    line-height: .1em;
+    color: #FFFF00;
+}
+
+.super-size h3 {
+    margin-left: 7em;
+    /*overflow: hidden;*/
+    text-overflow: clip;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 30pt;
+    line-height: .1em;
+    color: #33FF33;
+}
+
+span.stretch {
+    display: inline-block;
+    -webkit-transform: scale(2, 1);
+    /* Safari and Chrome */
+    -moz-transform: scale(2, 1);
+    /* Firefox */
+    -ms-transform: scale(2, 1);
+    /* IE 9 */
+    -o-transform: scale(2, 1);
+    /* Opera */
+    transform: scale(2, 1);
+    /* W3C */
+}
+
+h1.ftw , h2.ftw, h3.ftw {
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}

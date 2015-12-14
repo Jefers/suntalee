@@ -1,0 +1,52 @@
+ .mapCanvas{
+    width: 600px;
+    height: 450px;
+}
+.markerOptions
+{
+    margin-left: -25px;
+}
+.markerOptions li
+{
+    font-family: arial, sans-serif;
+    cursor: pointer;
+    margin-bottom: 3px;
+    padding: 10px;
+    color:#FFFFFF;
+    list-style-type:none;
+    position: relative;
+    background: #6FAEED;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+.markerOptions .selectedMarker
+{
+    background-color:#5585B5;
+}
+.markerOptions .selectedMarker:after
+{
+    border-color: transparent #5585B5;
+}
+
+.markerOptions li:after
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 12px 22px 12px 0;
+    border-color: transparent #6FAEED;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -22px;
+    top: 8px;
+}
+.mapContainer
+{
+    display:inline-block;
+}
+.mapContainer div, .mapContainer ul
+{
+    float:left;
+}

@@ -1,5 +1,5 @@
-$(document).ready(function () {
-
+$(document).ready(function() {
+    // Expand toggle the room boxes
     $(".more").click(function() {
         $more = $(this);
         //getting the next element
@@ -14,5 +14,52 @@ $(document).ready(function () {
             });
         });
     });
+
+    // Next and Prev Arrows scroll
+    $('section.section').first();
+
+    $('a.display').on('click', function(e) {
+        e.preventDefault();
+
+        var t = $(this).text().trim(),
+            that = $(this);
+
+        if (t === 'next' && $('.current').next('section.section').length > 0) {
+            var $next = $('.current').next('.section');
+            var top = $next.offset().top;
+
+            $('.current').removeClass('current');
+
+            $('body').animate({
+                scrollTop: top
+            }, function() {
+                $next.addClass('current');
+            });
+        } else if (t === 'prev' && $('.current').prev('section.section').length > 0) {
+            var $prev = $('.current').prev('.section');
+            var top = $prev.offset().top;
+
+            $('.current').removeClass('current');
+
+            $('body').animate({
+                scrollTop: top
+            }, function() {
+                $prev.addClass('current');
+            });
+        }
+    });
+
+    // END Next and Prev Arrows scroll
+
+    // Google map overlay to stop scrolling issue
+    $("#toggle").click(function() {
+        $(this).text(function(i, v) {
+            return v === 'enable map controls' ? 'disable map controls' : 'enable map controls';
+        });
+        $("#overlay").toggle();
+    });
+    // Google map overlay to stop scrolling issue
+
+
 
 });

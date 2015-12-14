@@ -1,0 +1,105 @@
+/* nogutters */
+
+.row.no-gutter > [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* end of nogutters* /
+
+/* prev next navigation */
+
+.navigation {
+    position: fixed;
+    opacity: 0.4;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    z-index: 1;
+}
+
+.glyphicon.glyphicon-chevron-up {
+    font-size: 45px;
+}
+
+.glyphicon.glyphicon-chevron-down {
+    font-size: 45px;
+}
+
+
+/* end of prev next navigation */
+
+
+/* google map overlay to diable mouse scroll etc. */
+
+#overlay.overlay {
+    display: true;
+    background-color: white;
+    opacity: 0.1;
+    /*background:transparent;*/
+    position: relative;
+    width: 100%;
+    height: 450px;
+    /* your iframe height */
+    top: 450px;
+    /* your iframe height */
+    margin-top: -450px;
+    /* your iframe height */
+}
+
+
+/* end of google map overlay */
+
+
+/* carousel mods */
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
+
+/* end of carousel mods */
+
+
+/* fix nav to top */
+
+body {
+    position: relative;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+}
+
+
+/*
+    .affix {
+        top: 0;
+        width: 100%;
+    }
+
+    .affix + .container-fluid {
+        padding-top: 70px;
+    }*/
+
+
+/* end of fix nav to top */

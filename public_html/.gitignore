@@ -1,3 +1,8 @@
+# local host
+wwwroot
+../wwwroot
+touch-icon-ipad-retina.png
+
 # Grunt node etc
 node_modules
 npm-debug.log

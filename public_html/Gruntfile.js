@@ -6,8 +6,8 @@ module.exports = function(grunt) {
 
     uglify: {
       build: {
-        src: ['js/src/jquery.min.js', 'js/src/jquery.scrolly.min.js', 'js/src/skel.min.js', 'js/src/init.js', 'js/src/imagelightbox.js', 'js/src/responsive-menu.js', 'js/src/lightbox.js', 'js/src/suntalee.js'],
-        dest: 'js/build/global.min.js'
+        src: ['js/src/skel.min.js', 'js/src/init.js', 'js/src/jquery.scrolly.min.js', 'js/src/imagelightbox.js', 'js/src/lightbox.js', 'js/src/suntalee.js'],
+        dest: 'js/build/suntalee.global.min.js'
       }
     },
 
@@ -23,12 +23,12 @@ module.exports = function(grunt) {
 //     }
 // },
 
-    concat: {
-        css: {
-          src: ['css/skel.css', 'css/style.css', 'css/style-wide.css', 'css/responsive-menu.css', 'css/responsive6.css', 'css/grad.css', 'css/imagelightbox.css', 'css/experimental.css'],
-          dest: 'css/suntalee.css'
-        }
-    },
+    // concat: {
+    //     css: {
+    //       src: ['css/skel.css', 'css/style.css', 'css/style-wide.css', 'css/responsive-menu.css', 'css/responsive6.css', 'css/grad.css', 'css/imagelightbox.css', 'css/experimental.css'],
+    //       dest: 'css/suntalee.css'
+    //     }
+    // },
 
     // cssmin: {
     //   css:{

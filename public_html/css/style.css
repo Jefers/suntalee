@@ -8,7 +8,7 @@
 
 	body
 	{
-		background: #F8F8F8;
+		background: red;
 	}
 
 		body.is-loading *
@@ -436,7 +436,7 @@
 			form label
 			{
 				display: block;
-				color: #FFFFFF
+				color: #ccc;
 			}
 
 			form input[type="text"],
@@ -939,9 +939,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 
 			.main > header h1
 			{
-				font-size: 3.5em;
-				font-weight: 100;
-				margin-bottom: 0;
+				font-size: 2.5em;
+				line-height: 1.8em;
+				font-weight: 300;
+				margin: 10px 0 0 0;
 			}
 
 			header h1.title
@@ -967,6 +968,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 
 		.main > .content
 		{
+			background: #F8F8F8;
 			padding: 6em 0 6em 0;
 		}
 
@@ -1073,6 +1075,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0101', end
 
 	#footer
 	{
+	  background: #F8F8F8;
 		position: relative;
 		margin: 0;
 		text-align: center;
