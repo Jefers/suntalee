@@ -92,6 +92,16 @@ $(document).ready(function() {
     });
     // Google map overlay to stop scrolling issue
 
+    $( ".navigation" ).draggable({
+  axis: "y"
+});
+
+// Getter
+var axis = $( ".navigation" ).draggable( "option", "axis" );
+
+// Setter
+$( ".navigation" ).draggable( "option", "axis", "y" );
+
 
     // End End Do Not write anything after this close
 });

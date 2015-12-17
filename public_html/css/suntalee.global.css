@@ -599,6 +599,7 @@ h3.ftw {
 
 .navigation {
     position: fixed;
+    padding: 60px;
     opacity: 0.4;
     bottom: 0;
     right: 0;
