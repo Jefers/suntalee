@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
     uglify: {
       build: {
-        src: ['js/src/skel.min.js', 'js/src/init.js', 'js/src/jquery.scrolly.min.js', 'js/src/imagelightbox.js', 'js/src/lightbox.js', 'js/src/suntalee.js'],
+        src: ['js/src/skel.min.js', 'js/src/init.js', 'js/src/jquery.scrolly.min.js', 'js/src/imagelightbox.js', 'js/src/lightbox.js', 'js/src/suntalee.js',  'js/src/isvisible.js'],
         dest: 'js/build/suntalee.global.min.js'
       }
     },

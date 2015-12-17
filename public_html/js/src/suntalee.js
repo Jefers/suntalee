@@ -15,14 +15,41 @@ $(document).ready(function() {
         });
     });
 
+    //  is visible - set the current section
+
+
+
     // Next and Prev Arrows scroll
-    $('section.section').first();
+
 
     $('a.display').on('click', function(e) {
+        // Cancel the default action (navigation) of the click
         e.preventDefault();
-
         var t = $(this).text().trim(),
             that = $(this);
+
+        // is there a <section> with a class of 'current'?
+        if (!$('section').hasClass('current')) {
+
+            $(function() {
+
+                // Loop over each container, and check if it's visible.
+                $('section').each(function() {
+
+                    // Is this element visible onscreen?
+                    var visible = $(this).visible(true);
+
+                    if (visible == true) {
+                        $(this).addClass('current');
+                    }
+
+
+                });
+
+            });
+        }
+
+        // Then continue
 
         if (t === 'next' && $('.current').next('section.section').length > 0) {
             var $next = $('.current').next('.section');
@@ -47,7 +74,12 @@ $(document).ready(function() {
                 $prev.addClass('current');
             });
         }
+
+
     });
+
+
+
 
     // END Next and Prev Arrows scroll
 
@@ -61,5 +93,5 @@ $(document).ready(function() {
     // Google map overlay to stop scrolling issue
 
 
-
+    // End End Do Not write anything after this close
 });
